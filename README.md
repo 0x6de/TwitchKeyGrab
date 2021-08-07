@@ -18,6 +18,7 @@ module.exports = {
 }
 ```
 Replace with your own steam credentials
+#### (works with steam guard too, you will be prompted to enter your steam guard code)
 
 
 ## Usage 
