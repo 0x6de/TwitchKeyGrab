@@ -14,7 +14,7 @@ create a config.js file in main folder
 ```
 module.exports = {
     accountName: 'YOUR_STEAM_ACCOUNT_NAME',
-	password: 'YOUR_STEAM_ACCOUNT_PASSWORD'
+    password: 'YOUR_STEAM_ACCOUNT_PASSWORD'
 }
 ```
 Replace with your own steam credentials
