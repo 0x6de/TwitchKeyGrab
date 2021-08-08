@@ -32,10 +32,18 @@ _(works with steam guard too, you will be prompted to enter your steam guard cod
 
 ## Usage 
 
-run node app.js followed by a twitch channel parameter
+Run node app.js followed by a twitch channel name as an argument
 
 ```
 node app.js your_twitch_channel
 ```
 
-When a steam key is found in twitch chat, it will automatically try to redeem it on your steam account. (It will also write an entry in logs.txt)
+When a steam key is found in twitch chat, it will automatically try to redeem it on your steam account. (It will also write an entry in logs.txt).
+
+#### command line argument
+
+You can add `--no-message` as an argument if you don't want to see all chat messages in console.
+
+```
+node app.js your_twitch_channel --no-message
+```

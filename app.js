@@ -6,7 +6,7 @@ const config = require('./config');
 const clientSteam = new SteamUser();
 
 var myArgs = process.argv.slice(2);
-console.log('Twitch channel parameter: ', myArgs[0]);
+console.log('Twitch channel argument: ', myArgs[0]);
 const SteamKey = new RegExp('((?![^0-9]{12,}|[^A-z]{12,})([A-z0-9]{4,5}-?[A-z0-9]{4,5}-?[A-z0-9]{4,5}(-?[A-z0-9]{4,5}(-?[A-z0-9]{4,5})?)?))');
 
 const logInOptions = {
@@ -16,7 +16,7 @@ const logInOptions = {
 };
 
 if (myArgs[0] === undefined) {
-    console.log("You need to type a twitch channel name in parameter \nexample: node app.js your_twitch_channel_name");
+    console.log("You need to type a twitch channel name in arguments \nexample: node app.js your_twitch_channel_name");
     process.exit();
 } else {
     const client = new tmi.Client({
@@ -35,7 +35,9 @@ if (myArgs[0] === undefined) {
     })
 
     client.on('message', (channel, tags, message, self) => {
-        console.log(`${tags['display-name']}: ${message}`);
+        if (myArgs[1] !== "--no-message") {
+            console.log(`${tags['display-name']}: ${message}`);
+        }
         if (SteamKey.test(message)) {
             var key = message.match(SteamKey)
             console.log("STEAM KEY DETECTED: " + message + "\nKey: " + key[0])
