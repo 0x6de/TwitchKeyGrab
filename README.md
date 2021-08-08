@@ -1,31 +1,34 @@
 # TwitchKeyGrab
 A simple nodejs app that try to automatically grab steam keys in a twitch chat. 
 
-### built with
+#### built with
 * [tmi.js](https://github.com/tmijs/tmi.js)
 * [steam-user](https://github.com/DoctorMcKay/node-steam-user)
 ___________________________________________________
 
 ## Installation
 
-1. clone this repository and run npm install inside the main folder to install dependencies
+* 1. clone this repository 
 
 ```
 git clone https://github.com/0x6de/TwitchKeyGrab.git
+```
 
+run npm install inside the main folder to install dependencies
+```
 npm install
 ```
 
-2. create a config.js file in main folder
+* 2. create a config.js file in main folder
 
-### config.js
+#### config.js
 ```
 module.exports = {
     accountName: 'YOUR_STEAM_ACCOUNT_NAME',
     password: 'YOUR_STEAM_ACCOUNT_PASSWORD'
 }
 ```
-Replace with your own steam credentials
+Replace with your own steam credentials. 
 _(works with steam guard too, you will be prompted to enter your steam guard code)_
 
 
