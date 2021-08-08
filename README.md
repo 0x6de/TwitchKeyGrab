@@ -8,18 +8,17 @@ ___________________________________________________
 
 ## Installation
 
-1. clone this repository 
-
+1. Clone this repository 
 ```
 git clone https://github.com/0x6de/TwitchKeyGrab.git
 ```
 
-run npm install inside the main folder to install dependencies
+2. Run npm install inside the main folder to install dependencies
 ```
 npm install
 ```
 
-2. create a config.js file in main folder
+3. Create a config.js file in main folder
 
 #### config.js
 ```
@@ -28,7 +27,7 @@ module.exports = {
     password: 'YOUR_STEAM_ACCOUNT_PASSWORD'
 }
 ```
-Replace with your own steam credentials. 
+4. Replace with your own steam credentials. 
 _(works with steam guard too, you will be prompted to enter your steam guard code)_
 
 
