@@ -8,7 +8,7 @@ ___________________________________________________
 
 ## Installation
 
-* 1. clone this repository 
+1. clone this repository 
 
 ```
 git clone https://github.com/0x6de/TwitchKeyGrab.git
@@ -19,7 +19,7 @@ run npm install inside the main folder to install dependencies
 npm install
 ```
 
-* 2. create a config.js file in main folder
+2. create a config.js file in main folder
 
 #### config.js
 ```
