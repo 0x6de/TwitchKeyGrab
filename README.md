@@ -1,5 +1,5 @@
 # TwitchKeyGrab
-A simple nodejs app that try to automatically grab steam keys in a twitch chat. 
+A simple nodejs app that try to automatically grab steam keys from twitch chat messages and redeem it on your steam account. 
 
 #### built with
 * [tmi.js](https://github.com/tmijs/tmi.js)
