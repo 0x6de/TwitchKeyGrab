@@ -8,17 +8,17 @@ ___________________________________________________
 
 ## Installation
 
-1. Clone this repository 
+__1.__ Clone this repository. 
 ```
 git clone https://github.com/0x6de/TwitchKeyGrab.git
 ```
 
-2. Run npm install inside the main folder to install dependencies
+__2.__ Run npm install inside the main folder to install dependencies.
 ```
 npm install
 ```
 
-3. Create a config.js file or simply rename `config.default.js` to `config.js` in main folder
+__3.__ Create a config.js file or simply rename `config.default.js` to `config.js` in main folder.
 #### config.js
 ```
 module.exports = {
@@ -26,7 +26,7 @@ module.exports = {
     password: 'YOUR_STEAM_ACCOUNT_PASSWORD'
 }
 ```
-4. Replace with your own steam credentials.  
+__4.__ Replace with your own steam credentials.  
 _(works with steam guard too, you will be prompted to enter your steam guard code)_
 
 
@@ -43,7 +43,7 @@ When a steam key is found in twitch chat, it will automatically try to redeem it
 
 #### command line argument
 
-You can add `--no-message` as an argument if you don't want to see all chat messages in console.
+You can add `--no-message` as a last argument if you don't want to see all chat messages in console.
 
 ```
 node app.js your_twitch_channel --no-message
