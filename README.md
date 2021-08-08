@@ -19,7 +19,6 @@ npm install
 ```
 
 3. Create a config.js file in main folder
-
 #### config.js
 ```
 module.exports = {
