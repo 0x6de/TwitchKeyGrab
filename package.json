@@ -1,13 +1,14 @@
 {
   "name": "twitchkeygrab",
   "version": "1.0.0",
-  "description": "",
+  "description": "Grab steam keys in twitch chat",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "0x6de",
+  "license": "MIT",
   "dependencies": {
     "steam-user": "^4.19.12",
     "tmi.js": "^1.8.3"
